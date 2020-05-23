@@ -3,14 +3,32 @@
     <head>
         <title>CSS EXP</title>
         <style>
-            h1, h2{
+            h1, h2{/* this means this style is for both "h1" and for "h2" */
                 color:aqua;
             }
-            ol li{
+            ol li{/* This means this style is for all "li" which are inside the "ol"*/
                 color:red;
             }
+            /* this means use this style for those "li" only which are immidiatly after "ol"
+            (those "li" are not included which are inside the "ul") */
             ol>li{
                 font-weight: bold;
+            }
+            input[type=text]{
+                background-color: yellow;
+                color: red;
+                font-weight: bold;
+            }
+            #a:hover{
+                background-color: blue;
+                color:white;
+            }
+            a::before{
+                content: "D ";
+            }
+            #select::selection{
+                background-color: red;
+                color: yellow;
             }
         </style>
     </head>
@@ -26,5 +44,28 @@
             </ul>
             <li>forth</li>
         </ol>
+        <p>
+            This page is made by the Dhairya Soni.
+            This page include the css styles 
+            Like:
+            <ul>
+                <li>style in input</li>
+                <li>Contain in css</li>
+                <li>::select</li>
+                <li>::before</li>
+                <li>:hover</li>               
+            </ul>
+        </p>
+        <div id="CSS">
+            <h4>Style in INPUT</h4>
+            <input type="text" id=inputText>
+            <hr>
+            <h4>See how to use the hover in css</h4>
+            <a href="#" id="a">See the code to see how you can use the hover in CSS</a><hr>
+            <h4>content and before in CSS in css</h4>
+            <a href="#" id="content">this is "a" </a>
+            <hr>
+            <h4 id="select"> Select these text </h4>
+        </div>
     </body>
 </html>
