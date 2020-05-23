@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mobile Responsive</title>
+        <Style>
+            .b{
+                font-weight: bold;
+            }
+            @media (min-width:601px){
+                body{
+                    background-color: red;
+                    color:white;
+                }
+            }
+            @media (max-width:600px){
+                body{
+                    background-color: blue;
+                    color:white;
+                }
+            }
+            .flex{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .flex> div{
+                width:300px;
+                background-color:yellow;
+                height:100px;
+                margin: 10px;
+                color: black;
+                padding-top: 10px;
+            }
+        </Style>
+    </head>
+    <body>
+        <p>If you gonna make the width of this screen less then 600px </p>
+        <p>The background color will be change from <span class="b">RED</span> to <span class="b">BLUE</span></p>
+        <hr>
+        <h3>Now let's see the <span class="b">FLEX</span></h3>
+        <div class="flex">
+            <div>This is the first DIV</div>
+            <div>This is the second DIV</div>
+            <div>This is the third DIV</div>
+            <div>This is the forth DIV</div>
+            <div>This is the fifth DIV</div>
+            <div>This is the sixth DIV</div>
+        </div>
+    </body>
+</html>
